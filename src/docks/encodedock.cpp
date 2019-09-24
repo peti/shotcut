@@ -765,7 +765,6 @@ Mlt::Properties* EncodeDock::collectProperties(int realtime)
                     setIfNotSet(p, "pix_fmt", "nv12");
                 } else if (vcodec.endsWith("_vaapi")) {
                     setIfNotSet(p, "vprofile", "main");
-                    setIfNotSet(p, "connection_type", "x11");
                 }
             }
             setIfNotSet(p, "width", ui->widthSpinner->value());
